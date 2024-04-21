@@ -3,26 +3,6 @@ from topologicpy.CellComplex import CellComplex
 from topologicpy.Topology import Topology
 from topologicpy.Dictionary import Dictionary
 
-# number of units Parameter
-n_units = 2
-
-#### building Parameters
-origin = Vertex.ByCoordinates(0, 0, 0)
-bWidth = 15
-bLength = 22
-bPlacement = 'lowerleft'
-storeyHeight = 3
-storey_1_height = 4
-storeys = 6
-ridge_height = 6
-baseCorr_origin = origin
-cWidth = 2.5
-cLength = bWidth
-coreWidth = 5
-coreLength = 6
-
-# #call
-# building, selectors = create_building(origin, bWidth, bLength, bPlacement, storeyHeight, storey_1_height, storeys)
 
 def create_face_dictionaries(building, selectors):
     
@@ -85,6 +65,3 @@ def create_face_dictionaries(building, selectors):
         assignDictionary(topologies, vertexGroup)
             
     return (topologies, vertexGroups)
-
-# # call
-# building = create_face_dictionaries(building, selectors)

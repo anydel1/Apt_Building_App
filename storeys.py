@@ -11,16 +11,8 @@ n_units = 2
 
 #### building Parameters
 origin = Vertex.ByCoordinates(0, 0, 0)
-bWidth = 15
-bLength = 22
-bPlacement = 'lowerleft'
-storeyHeight = 3
-storey_1_height = 4
-storeys = 6
-ridge_height = 6
 baseCorr_origin = origin
 cWidth = 2.5
-cLength = bWidth
 coreWidth = 5
 coreLength = 6
 
@@ -99,7 +91,7 @@ def create_building(origin, bWidth, bLength, bPlacement, storeyHeight, storey_1_
     # Sort the cells again by the Z-coordinate of their centroid
     unitCells.sort(key=lambda cell: Vertex.Z(Topology.Centroid(cell)))
     
-    # maybe modularize building into a function. Think of reasons why that would be good.
+    # Create CellComplex from Cluster
     building = Cluster.ByTopologies(unitCells)
     building = CellComplex.ByCellsCluster(building)
 
@@ -111,8 +103,3 @@ def create_building(origin, bWidth, bLength, bPlacement, storeyHeight, storey_1_
     
     
     return(building, selectors, topFace, vertices, stHeight)
-
-# #call
-# building, selectors, topFace, vertices = create_building(origin, bWidth, bLength, bPlacement, storeyHeight, storey_1_height, storeys)
-
-# Topology.Show(building, selectors, vertexColor='red', vertexSize=3, renderer="browser")
