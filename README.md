@@ -6,28 +6,28 @@ The application connects to a Neo4j database automatically creating a property g
 
 The properties of the nodes conform to a simplifed IFC schema while mapping to topologicpy and conventional naming ontologies.
 
-  IFC Ontology:
-  IfcSpace
-  IfcWall
-  IfcSlab 
-  IfcRoof
+  IFC Ontology: 
+  IfcSpace, 
+  IfcWall, 
+  IfcSlab, 
+  IfcRoof, 
   
-  Topologicpy Ontology:
-  Cell
-  External Vertical Face
-  Internal Vertical Face
-  External Horizontal Face
-  Internal Horizontal Face
-  External Inclined Face
+  Topologicpy Ontology: 
+  Cell, 
+  External Vertical Face, 
+  Internal Vertical Face, 
+  External Horizontal Face, 
+  Internal Horizontal Face, 
+  External Inclined Face, 
   
-  Conventional Ontology:
-  Apartment
-  Cooridor
-  Stairwell
-  Attic
-  Wall
-  Floor_Slab
-  Roof
+  Conventional Ontology: 
+  Apartment, 
+  Cooridor, 
+  Stairwell, 
+  Attic, 
+  Wall, 
+  Floor_Slab, 
+  Roof, 
 
 The Graph's relationships are all defined generically as 'connected_to'
 	
