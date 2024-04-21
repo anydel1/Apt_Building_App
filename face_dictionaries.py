@@ -28,7 +28,7 @@ def create_face_dictionaries(building, selectors):
     
     # Face variables
     slabEntity = "ifcSlab"
-    slabtype1 = "slab"
+    slabtype1 = "floor_slab"
     slabtype2 = "roof"
     wallEntity = "ifcWall"
     roofEntity = "ifcRoof"
