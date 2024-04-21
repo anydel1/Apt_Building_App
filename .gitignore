@@ -1,0 +1,7 @@
+__pycache__
+.venv
+main_venv
+.vscode
+app_sandbox
+requirements_dev.txt
+dependencies.txt
