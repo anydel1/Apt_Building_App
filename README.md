@@ -10,7 +10,7 @@ The properties of the nodes conform to a simplifed IFC schema while mapping to t
   IfcSpace, 
   IfcWall, 
   IfcSlab, 
-  IfcRoof, 
+  IfcRoof 
   
   Topologicpy Ontology: 
   Cell, 
@@ -18,7 +18,7 @@ The properties of the nodes conform to a simplifed IFC schema while mapping to t
   Internal Vertical Face, 
   External Horizontal Face, 
   Internal Horizontal Face, 
-  External Inclined Face, 
+  External Inclined Face
   
   Conventional Ontology: 
   Apartment, 
@@ -27,7 +27,7 @@ The properties of the nodes conform to a simplifed IFC schema while mapping to t
   Attic, 
   Wall, 
   Floor_Slab, 
-  Roof, 
+  Roof 
 
 The Graph's relationships are all defined generically as 'connected_to'
 	
