@@ -1,4 +1,4 @@
-A simple web application (my first) demonstrating the use of Topologicpy to create a graph-based apartment building with some parametric features and connection to a Neo4j graph database for creating, storing, and updating the building data.
+A simple web application (my first) demonstrating the use of Topologicpy and Streamlit to create a graph-based apartment building with some parametric features and connection to a Neo4j graph database for creating, storing, and updating the building data.
 
 Parametric modeling features include a dropdown menu to choose the diagram mode: 'Show Building', 'Show Graph', 'Show Building and Graph', and sliders to change the geometry of the building. With the sliders you can change the overall length and width of the building, the storey heights - including independently changing the first storey height, the number of storeys, and the roof ridge height and length.
 
