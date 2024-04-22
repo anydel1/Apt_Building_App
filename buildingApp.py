@@ -49,7 +49,7 @@ if __name__ == '__main__':
     
     # Combine the building data and graph into a single Plotly figure.
     combined_data = data01 + data02
-    figure = Plotly.FigureByData(combined_data, width=950, height=600, backgroundColor="white", marginTop=5) # backgroundColor="rgb(14, 17, 23)") for dark mode.
+    figure = Plotly.FigureByData(combined_data, width=950, height=600, backgroundColor="lightgrey", marginTop=5) # backgroundColor="rgb(14, 17, 23)") for dark mode.
     figure = Plotly.SetCamera(figure, camera=[2.00, 1.85, 0.35], center=[0, 0, 0], up=[0, 0, 1], projection="perspective")
 
 
@@ -59,13 +59,10 @@ if __name__ == '__main__':
     user = "neo4j"
     password = os.getenv('NEO4J_PASSWORD')
     
-    
     neoGraph = Neo4j.ByParameters(uri, user, password)
     neoGraph = Neo4j.DeleteAll(neoGraph)
     # Add Topologic graph to Neo4j database
     Neo4j.SetGraph(neoGraph, graph, labelKey='group', relationshipKey='IS_PART_OF')
-    # nodeLabels = Neo4j.NodeLabels(neoGraph)
-    # print(nodeLabels)
 
     # Show plotly figure based on the user's selection
     if display_option == 'Show building':
