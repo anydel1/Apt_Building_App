@@ -6,8 +6,15 @@ This simple web application demonstrates the use of **Topologicpy** to create a 
 
 The parametric modeling features include:
 
-1. A dropdown menu to choose the diagram mode: 'Show Building', 'Show Graph', 'Show Building and Graph'.
-2. Sliders to change the geometry of the building. With the sliders, you can change the overall length and width of the building, the storey heights - including independently changing the first storey height, the number of storeys, and the roof ridge height and length.
+A dropdown menu to choose the diagram mode:
+‘Show Building’
+‘Show Graph’
+‘Show Building and Graph’
+Sliders to change the geometry of the building. With the sliders, you can adjust:
+Overall length and width of the building
+Storey heights (including independently changing the first storey height)
+Number of storeys
+Roof ridge height and length
 
 ## Neo4j Database Connection
 
