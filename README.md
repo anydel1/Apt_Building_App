@@ -1,6 +1,6 @@
 # A Topologic Apartment Building App
 
-This is a simple web application that demonstrates the use of **Topologicpy** to create a topological/graph-based apartment building with some basic parametric features, and connects to a **Neo4j graph database** for creating, storing, and updating the building data. It uses **Streamlit** for the frontend UI.
+This simple web application demonstrates the use of **Topologicpy** to create a topologically/graph-based apartment building with some basic parametric features. It integrates with a **Neo4j graph database** for the creation, storage, and real-time updating of building data. The user interface is powered by **Streamlit** for quick development feedback.
 
 ## Parametric Modeling Features
 
