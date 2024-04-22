@@ -62,8 +62,8 @@ I'm particularly interested in developing interoperable workflows that leverage 
 ## Acknowledgements
 
 - Topologic is a powerful graph/topology-based software modeling and analysis library developed by Wassim Jabi. Thank you, Wassim! https://github.com/wassimj/topologicpy.git
-- Neo4j is a graph database management system to store, analyze, and visualize connected data.
-- Streamlit is an open-source Python library that allows you to quickly create and share interactive web applications.
+- Neo4j is a graph database management system to store, analyze, and visualize connected data. https://neo4j.com/docs/
+- Streamlit is an open-source Python library that allows you to quickly create and share interactive web applications. https://docs.streamlit.io/
 
 All three support machine learning and AI integration.
 
