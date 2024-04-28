@@ -1,4 +1,3 @@
-from topologicpy.Vertex import Vertex
 from topologicpy.CellComplex import CellComplex
 from topologicpy.Topology import Topology
 from topologicpy.Dictionary import Dictionary
@@ -21,7 +20,6 @@ def create_face_dictionaries(building, selectors):
 
     # Decompose the CellComplex: Returns dictionary of Keys with face groups.
     d = CellComplex.Decompose(building)
-    # d['Cells'] = Topology.Cells(building)
     keys = Dictionary.Keys(d)
     # cells = d['Cells']
     externalFaces = d['externalVerticalFaces']
