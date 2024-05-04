@@ -51,7 +51,7 @@ def create_building(origin, bWidth, bLength, bPlacement, storeyHeight, storey_1_
             id = storey * 100 + (cells.index(cell) % n_units + 1)
             # Create dictionary     
             d1 = Dictionary.ByKeysValues(["id","group", "entity", "spaceID", "type", "area", "height", "volume"], ["Cells"+str(i), "Cells", "ifcSpace", str(id), "apartment", 30, stHeight, 90])
-            t = Topology.SetDictionary(cen, d1)
+            cen = Topology.SetDictionary(cen, d1)
             selectors.append(cen)
         units.append(complex)
         

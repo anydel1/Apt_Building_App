@@ -1,10 +1,6 @@
 from topologicpy.Edge import Edge
-from topologicpy.Wire import Wire
 from topologicpy.Face import Face
 from topologicpy.Cell import Cell
-from topologicpy.CellComplex import CellComplex
-from topologicpy.Cluster import Cluster
-from topologicpy.Shell import Shell
 from topologicpy.Topology import Topology
 from topologicpy.Dictionary import Dictionary
 
@@ -18,7 +14,7 @@ def create_roof(topFace, bWidth, selectors, stHeight, ridge_height, ridge_length
     # topFace = Face.Rectangle(width=width, length=length, direction=[0,0,1], placement="center")
 
     base_edges = Face.Edges(topFace)
-    base_vertices = Face.Vertices(topFace)
+    # base_vertices = Face.Vertices(topFace)
 
     mid_edge = Edge.ByOffset2D(base_edges[1], bWidth/2,)
     ridge = Edge.TranslateByDirectionDistance(mid_edge, [0, 0, 1], ridge_height) # move to ridge height
